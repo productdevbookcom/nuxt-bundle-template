@@ -45,14 +45,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 [Setup Github App](https://github.com/apps/renovate) for Renovate.
 
 
-# Checklists
-
-- Update the `README.md` file.
-- Update the `LICENSE` file.
-- Update the `package.json` file. (name,version, description, author, repository, bugs, homepage, funding, keywords)
-- playground/src/App.vue - update package name `vue-bundle-template`
-- playground/package.json - in change the package name `vue-bundle-template` 
-
 ## Sponsors
 
 <p align="center">
