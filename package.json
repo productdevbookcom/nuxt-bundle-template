@@ -1,5 +1,6 @@
 {
   "name": "vue-bundle-template",
+  "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.3.0",
   "description": "add description",
@@ -17,12 +18,14 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.es.js"
-    }
+      "types": "./dist/types.d.ts",
+      "require": "./dist/module.cjs",
+      "import": "./dist/module.mjs"
+    },
+    "./utils": "./dist/utils.mjs"
   },
-  "main": "./dist/index.es.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
   "files": [
     "dist"
   ],
@@ -31,10 +34,12 @@
     "pnpm": ">=8"
   },
   "scripts": {
-    "build": "vite build --mode production",
-    "build:watch": "vite build --watch",
-    "dev": "vite",
-    "play": "pnpm --filter playground dev",
+    "dev": "pnpm nuxi dev playground-nuxt",
+    "build": "pnpm dev:prepare && pnpm nuxt-module-build",
+    "dev:build": "nuxi build playground-nuxt",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "play": "pnpm --filter playground-nuxt dev",
+    "play:vue": "pnpm --filter playground-vue dev",
     "prepublishOnly": "pnpm run build",
     "release": "pnpm build && bumpp --commit --push --tag && pnpm publish",
     "lint": "eslint .",
@@ -46,8 +51,14 @@
   "peerDependencies": {
     "vue": "=>3.3.0"
   },
+  "dependencies": {
+    "@nuxt/kit": "^3.5.0",
+    "defu": "^6.1.2"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.0",
+    "@nuxt/module-builder": "^0.3.1",
+    "@nuxt/schema": "^3.5.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitest/coverage-c8": "^0.31.1",
     "@vue-macros/volar": "^0.9.8",
@@ -56,6 +67,8 @@
     "eslint": "^8.41.0",
     "jsdom": "^22.0.0",
     "typescript": "^5.0.4",
+    "unbuild": "^1.2.1",
+    "unconfig": "^0.3.7",
     "unplugin-vue-macros": "^2.1.7",
     "vite": "^4.3.8",
     "vite-plugin-dts": "^2.3.0",

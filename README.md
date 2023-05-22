@@ -1,12 +1,13 @@
-# Vue Typescript Bundle Template
+# Nuxt Typescript Bundle Template
 
-![Vue Typescript Bundle Template](https://github.com/productdevbookcom/assets/blob/main/vue-ts-bundle-template.jpg?raw=true)
+![Vue Typescript Bundle Template](https://github.com/productdevbookcom/nuxt-bundle-template/blob/main/.github/assets/nuxt-bundle-template.png?raw=true)
 
 
 This is a template for creating a Typescript bundle. It is based on the [Typescript](https://www.typescriptlang.org/) compiler with the [Vite](https://vitejs.dev/) bundler.
 
 ## Features
 
+- [x] [Nuxt](https://nuxtjs.org/)
 - [x] [Typescript](https://www.typescriptlang.org/)
 - [x] [Vite](https://vitejs.dev/)
 - [x] [Vue](https://vuejs.org/)
@@ -22,16 +23,20 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 
 ## Usage
 
-1. To use this template, click the "Use this template" button above.
-2. Clone the repository to your local machine.
-3. Run `pnpm install` to install the dependencies.
-4. Run `pnpm build` to build the bundle.
-5. Run `build:watch` to build the bundle in watch mode.
-6. Run `pnpm play` to playground dev mode.
-7. Run `pnpm start` to start the bundle.
-8. Run `pnpm lint` to lint the code. (You can also run `pnpm lint:fix` to fix the linting errors.)
-9. Run `pnpm test` to run the tests. (You can also run `pnpm test:watch` to run the tests in watch mode.)
-10. Run `pnpm release` to bump the version. Terminal will ask you to select the version type. And then it will automatically commit and push the changes. GitHub Actions will automatically publish git tags. NPM local registry will automatically publish the package.
+- To use this template, click the "Use this template" button above.
+- Clone the repository to your local machine.
+- Run `pnpm install` to install the dependencies.
+- Run `pnpm dev` to start the development server.
+- Run `pnpm dev:build` nuxt build playground nuxt app.
+- Run `pnpm dev:prepare` nuxt build playground nuxt app prepare.
+- Run `pnpm build` to build the bundle.
+- Run `dev:prepare` to build the bundle in watch mode.
+- Run `pnpm play` to playground-nuxt app.
+- Run `pnpm play:vue` to playground-vue app.
+- Run `pnpm start` to start the bundle.
+- Run `pnpm lint` to lint the code. (You can also run `pnpm lint:fix` to fix the linting errors.)
+- Run `pnpm test` to run the tests. (You can also run `pnpm test:watch` to run the tests in watch mode.)
+- Run `pnpm release` to bump the version. Terminal will ask you to select the version type. And then it will automatically commit and push the changes. GitHub Actions will automatically publish git tags. NPM local registry will automatically publish the package.
 
 ## Configuration
 
