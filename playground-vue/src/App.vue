@@ -1,6 +1,5 @@
 <script setup lang="ts">
 // TODO: change to your package name
-import { Button } from 'vue-bundle-template'
 </script>
 
 <template>

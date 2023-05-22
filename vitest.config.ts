@@ -16,9 +16,10 @@ export default defineConfig({
       '**/node_modules/**',
       '**/dist/**',
     ],
-    include: ['**/test/*.{js,tsx,ts}'],
+    include: ['**/tests/**/*.{js,tsx,ts}'],
     alias: {
-      '@root': './src',
+      '~/vue': './playground-vue',
+      '~/nuxt': './playground-nuxt',
     },
   },
 })
