@@ -1,6 +1,6 @@
 # Nuxt Typescript Bundle Template
 
-![Vue Typescript Bundle Template](https://github.com/productdevbookcom/nuxt-bundle-template/blob/main/.github/assets/nuxt-bundle-template.png?raw=true)
+![Nuxt Typescript Bundle Template](https://github.com/productdevbookcom/nuxt-bundle-template/blob/main/.github/assets/nuxt-bundle-template.png?raw=true)
 
 
 This is a template for creating a Typescript bundle. It is based on the [Typescript](https://www.typescriptlang.org/) compiler with the [Vite](https://vitejs.dev/) bundler.
