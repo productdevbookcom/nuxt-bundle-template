@@ -8,6 +8,16 @@ export default defineNuxtConfig({
         '../../*.ts',
         '../../src/**/*.ts',
       ],
+      compilerOptions: {
+        paths: {
+          '~/vue/*': [
+            '../playground-vue/*',
+          ],
+          '~/vue': [
+            '../playground-vue',
+          ],
+        },
+      },
     },
   },
 })
