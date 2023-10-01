@@ -1,8 +1,6 @@
-import { fileURLToPath } from 'node:url'
+import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { setup, useTestContext } from '@nuxt/test-utils'
-import { resolve } from 'path'
-
+import { setup } from '@nuxt/test-utils'
 
 describe('module', async () => {
   await setup({
@@ -11,7 +9,7 @@ describe('module', async () => {
   })
 
   it('should purge classes', async () => {
-    const ctx = useTestContext()
+    // const ctx = useTestContext()
     expect(true).toBe(true)
   })
 })
