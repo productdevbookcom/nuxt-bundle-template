@@ -17,6 +17,12 @@
   ],
   "packageRules": [
     {
+      "enabled": false,
+      "matchDepTypes": [
+        "peerDependencies"
+      ]
+    },
+    {
       "matchFiles": [
         "package.json"
       ],
