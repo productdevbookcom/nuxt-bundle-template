@@ -79,7 +79,7 @@ importers:
   playground-nuxt:
     dependencies:
       nuxt:
-        specifier: ^3.5.3
+        specifier: ^3.7.4
         version: 3.7.4(eslint@8.50.0)(rollup@3.29.4)(typescript@5.2.2)
       vue-bundle-template:
         specifier: workspace:*
