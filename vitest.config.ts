@@ -7,9 +7,9 @@ export default defineConfig({
     disabled: true,
   },
   test: {
-    environment: 'jsdom',
+    environment: 'happy-dom',
     coverage: {
-      provider: 'c8', // or 'c8',
+      provider: 'v8',
       reporter: ['text', 'json-summary', 'json', 'html'],
     },
     exclude: [
