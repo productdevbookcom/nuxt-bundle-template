@@ -104,7 +104,7 @@ importers:
         specifier: workspace:^
         version: link:..
       vue-tsc:
-        specifier: ^1.6.5
+        specifier: ^1.8.15
         version: 1.8.15(typescript@5.2.2)
 
 packages:
