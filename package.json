@@ -30,8 +30,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=16",
-    "pnpm": ">=8"
+    "node": ">=18"
   },
   "scripts": {
     "dev": "pnpm nuxi dev playground-nuxt",
@@ -46,7 +45,8 @@
     "lint:fix": "eslint . --fix",
     "test": "pnpm dev:prepare && vitest",
     "test:watch": "pnpm dev:prepare && vitest --watch",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "postinstall": "npx simple-git-hooks"
   },
   "peerDependencies": {
     "vue": ">=3.3.0"
@@ -68,6 +68,8 @@
     "eslint": "^8.50.0",
     "happy-dom": "^12.4.0",
     "jsdom": "^22.1.0",
+    "lint-staged": "^14.0.1",
+    "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
     "unconfig": "^0.3.10",
@@ -76,6 +78,12 @@
     "vite-plugin-dts": "^3.6.0",
     "vitest": "^0.34.6",
     "vue": "^3.3.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "pnpm eslint . --fix"
   },
   "publishConfig": {
     "access": "public"
