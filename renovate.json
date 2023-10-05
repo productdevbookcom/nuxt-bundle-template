@@ -23,21 +23,59 @@
       ]
     },
     {
-      "matchFiles": [
-        "package.json"
+      "groupName": "playground-nuxt",
+      "commitMessageTopic": "playground-nuxt",
+      "matchPaths": [
+        "playground-nuxt/**"
       ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    },
+    {
+      "groupName": "playground-vue",
+      "commitMessageTopic": "playground-vue",
+      "matchPaths": [
+        "playground-vue/**"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch"
+      ],
+      "matchDatasources": [
+        "npm"
+      ]
+    },
+    {
+      "groupName": "root",
       "matchUpdateTypes": [
         "patch",
         "minor",
         "major"
       ],
-      "groupName": "root",
-      "groupSlug": "shared-root",
+      "ignorePaths": [
+        "**/playground/**",
+        "**/playground-vue/**",
+        "**/playground-nuxt/**"
+      ],
+      "matchDatasources": [
+        "npm",
+        "github-actions"
+      ],
       "labels": [
         "dependencies"
       ],
       "addLabels": [
         "dependencies"
+      ],
+      "matchFiles": [
+        "package.json"
       ]
     }
   ]
