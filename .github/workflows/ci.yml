@@ -32,7 +32,7 @@ jobs:
       - run: corepack enable
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: pnpm
 
       - name: 📦 Install dependencies
@@ -41,18 +41,14 @@ jobs:
       - name: 👀 Lint
         run: pnpm lint
 
-      - name: 🚀 Build
-        run: pnpm build
+      - name: 🏗️ Prepare
+        run: pnpm dev:prepare
 
-      # - name: 🧪 Test
-      #   run: pnpm test
-      #   env:
-      #     VITE_TEST_DB_URL: ${{ secrets.VITE_TEST_DB_URL }}
+      - name: 📦 Build
+        run: pnpm prepack
 
       - name: 🧪 Test with coverage
         run: pnpm coverage
-        env:
-          VITE_TEST_DB_URL: ${{ secrets.VITE_TEST_DB_URL }}
 
       - name: 📝 Upload coverage
         if: always()

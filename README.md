@@ -2,7 +2,6 @@
 
 ![Nuxt Typescript Bundle Template](https://github.com/productdevbookcom/nuxt-bundle-template/blob/main/.github/assets/nuxt-bundle-template.png?raw=true)
 
-
 This is a template for creating a Typescript bundle. It is based on the [Typescript](https://www.typescriptlang.org/) compiler with the [Vite](https://vitejs.dev/) bundler.
 
 ## Features
@@ -20,7 +19,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 - [x] [NPM Local Registry]()
 - [x] [Renovate]()
 
-
 ## Usage
 
 - To use this template, click the "Use this template" button above.
@@ -31,8 +29,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 - Run `pnpm dev:prepare` nuxt build playground nuxt app prepare.
 - Run `pnpm build` to build the bundle.
 - Run `dev:prepare` to build the bundle in watch mode.
-- Run `pnpm play` to playground-nuxt app.
-- Run `pnpm play:vue` to playground-vue app.
 - Run `pnpm start` to start the bundle.
 - Run `pnpm lint` to lint the code. (You can also run `pnpm lint:fix` to fix the linting errors.)
 - Run `pnpm test` to run the tests. (You can also run `pnpm test:watch` to run the tests in watch mode.)
@@ -44,7 +40,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 
 [Setup Github App](https://github.com/apps/renovate) for Renovate.
 
-
 ## Sponsors
 
 <p align="center">
@@ -52,7 +47,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
     <img alt="sponsors" src='https://cdn.jsdelivr.net/gh/oku-ui/static/sponsors/sponsors.svg'/>
   </a>
 </p>
-
 
 ## License
 
