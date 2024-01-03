@@ -2,7 +2,6 @@
 
 ![Nuxt Typescript Bundle Template](https://github.com/productdevbookcom/nuxt-bundle-template/blob/main/.github/assets/nuxt-bundle-template.png?raw=true)
 
-
 This is a template for creating a Typescript bundle. It is based on the [Typescript](https://www.typescriptlang.org/) compiler with the [Vite](https://vitejs.dev/) bundler.
 
 ## Features
@@ -19,7 +18,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 - [x] [GitHub Actions]()
 - [x] [NPM Local Registry]()
 - [x] [Renovate]()
-
 
 ## Usage
 
@@ -44,7 +42,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 
 [Setup Github App](https://github.com/apps/renovate) for Renovate.
 
-
 ## Sponsors
 
 <p align="center">
@@ -52,7 +49,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
     <img alt="sponsors" src='https://cdn.jsdelivr.net/gh/oku-ui/static/sponsors/sponsors.svg'/>
   </a>
 </p>
-
 
 ## License
 
