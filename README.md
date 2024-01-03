@@ -29,8 +29,6 @@ This is a template for creating a Typescript bundle. It is based on the [Typescr
 - Run `pnpm dev:prepare` nuxt build playground nuxt app prepare.
 - Run `pnpm build` to build the bundle.
 - Run `dev:prepare` to build the bundle in watch mode.
-- Run `pnpm play` to playground-nuxt app.
-- Run `pnpm play:vue` to playground-vue app.
 - Run `pnpm start` to start the bundle.
 - Run `pnpm lint` to lint the code. (You can also run `pnpm lint:fix` to fix the linting errors.)
 - Run `pnpm test` to run the tests. (You can also run `pnpm test:watch` to run the tests in watch mode.)
