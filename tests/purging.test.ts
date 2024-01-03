@@ -4,7 +4,7 @@ import { setup } from '@nuxt/test-utils'
 
 describe('module', async () => {
   await setup({
-    rootDir: resolve(__dirname, '../../playground-nuxt'),
+    rootDir: resolve(__dirname, '../playground'),
     build: true,
   })
 
