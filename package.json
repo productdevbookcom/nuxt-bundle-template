@@ -43,7 +43,7 @@
     "test": "vitest run",
     "test:watch": "vitest watch",
     "coverage": "vitest run --coverage",
-    "postinstall": "npx simple-git-hooks"
+    "prepare": "npx simple-git-hooks"
   },
   "peerDependencies": {
     "vue": ">=3.3.0"
