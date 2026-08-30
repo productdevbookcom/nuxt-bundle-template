@@ -71,7 +71,7 @@
     "unconfig": "^0.3.11",
     "unplugin-vue-macros": "^2.7.13",
     "vite": "^5.2.6",
-    "vitest": "^1.4.0",
+    "vitest": "^3.0.0",
     "vue": "^3.4.21"
   },
   "simple-git-hooks": {
